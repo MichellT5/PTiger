@@ -17,7 +17,6 @@ DEV VERSION 4.0 LAST UPDATED 2/21/2019
 
 $primary-color: #727272;
 $secondary-color: #fff;
-$yellow: #E4BC00;
 
 $webfont: 'Nunito Sans', sans-serif;
 $webfont2: 'Open Sans', sans-serif;
@@ -302,7 +301,7 @@ $mobile-nav-bg: 0;
 @mixin transition($args...) { $type: nth($args, length($args)); $props: remove-nth($args, length($args)); $result: (); @for $i from 1 through length($props) { $prop: nth($props, $i); $result: append($result, $prop); $result: append($result, $type); @if $i !=length($props) { $result: append($result, unquote($string: ",")); } } transition: $result; }
 %btn {
     @include transition(background-color, color, border-color, 0.3s ease-in-out); display: block; border: 0 solid $primary-color;
-    border-radius: 4px; background-color: $yellow; text-decoration: none; font-family: $webfont; color: #000;
+    border-radius: 4px; background-color: #fff; text-decoration: none; font-family: $webfont; color: #000;
     @include tablet-desktop { border-radius: 12px; }
 }
 %btn-icon { position: relative; padding-right: 11.54vw; i { position: absolute; right: 3.92vw; } }
@@ -349,12 +348,12 @@ $nav-max-width: 100%; /* 100% to full width */
             background-color: #000;
             a {
                 font-weight: 600; color: #fff;
-                @include tablet-desktop { border-color: $yellow; border-width: 0; }
-                @include hover { background-color: $yellow; color: #000; }
+                @include tablet-desktop { border-color: #fff; border-width: 0; }
+                @include hover { background-color: #fff; color: #000; }
             }
         }
         @include hover {
-            >a { background-color: $yellow; color: #000; }
+            >a { background-color: #fff; color: #000; }
         }
     }
 }
