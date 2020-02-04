@@ -1,0 +1,26 @@
+// Custom code
+@function responsive-px($sm-px, $lg-px, $sm-vw, $lg-vw) { @return calc(#{$sm-px}px + (#{$lg-px} - #{$sm-px}) * ((100vw - #{$sm-vw}px) / (#{$lg-vw} - #{$sm-vw}))); }
+@function responsive-px-extra($sm-px, $lg-px, $sm-vw, $lg-vw, $extra: 0px) { @return calc(#{$sm-px}px + (#{$lg-px} - #{$sm-px}) * ((100vw - #{$sm-vw}px) / (#{$lg-vw} - #{$sm-vw})) + #{$extra}); }
+@mixin hoverall { &:hover, &:focus, &:active { @content; } };
+@mixin hover { @include tablet-desktop { @include hoverall { @content; }; }; };
+@mixin min($min) { @media(min-width:#{$min}px) { @content; } };
+@mixin max($max) { @media(max-width:#{$max}px) { @content; } };
+@mixin range($min: 0, $max: 1920) { @media (min-width:#{$min}px) and (max-width:#{$max}px) { @content; } };
+@function remove-nth($list, $index) { $result: null; @if type-of($index) !=number { @warn "$index: #{quote($index)} is not a number for `remove-nth`."; } @else if $index==0 { @warn "List index 0 must be a non-zero integer for `remove-nth`."; } @else if abs($index)>length($list) { @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`."; } @else { $result: (); $index: if($index < 0, length($list) + $index + 1, $index); @for $i from 1 through length($list) { @if $i !=$index { $result: append($result, nth($list, $i)); } } } @return $result; }
+/* usage: @include transition(prop1, prop2, ..., 0.5s cubic-bezier(0.16, 0.85, 0.45, 1)); */
+@mixin transition($args...) { $type: nth($args, length($args)); $props: remove-nth($args, length($args)); $result: (); @for $i from 1 through length($props) { $prop: nth($props, $i); $result: append($result, $prop); $result: append($result, $type); @if $i !=length($props) { $result: append($result, unquote($string: ",")); } } transition: $result; }
+%btn {
+    @include transition(background-color, color, border-color, 0.3s ease-in-out); display: block; border: 0 solid $primary-color;
+    border-radius: 4px; background-color: $yellow; text-decoration: none; font-family: $webfont; color: #000;
+    @include tablet-desktop { border-radius: 12px; }
+}
+%btn-icon { position: relative; padding-right: 11.54vw; i { position: absolute; right: 3.92vw; } }
+%btn-flex { display: flex; align-items: center; }
+@mixin btn-hover { background-color: $primary-color; color: #fff; border-color: $primary-color; }
+%btn-primary-hover { @include btn-hover; }
+@mixin make-responsive($class, $prop, $value) { #{$class} { #{$prop}: $value; @media (max-width:575.98px) { &-xs { #{$prop}: $value } } @media (min-width:576px) { &-sm { #{$prop}: $value } } @media (min-width:768px) { &-md, &-td { #{$prop}: $value } } @media (min-width:992px) { &-lg { #{$prop}: $value } } @media (min-width:1200px) { &-xl { #{$prop}: $value } } } }
+/* Display */ @include make-responsive(".d-none", display, none); @include make-responsive(".d-flex", display, flex); @include make-responsive(".d-block, .break", display, block); @include make-responsive(".d-inline", display, inline); @include make-responsive(".d-inline-block, .d-iblock, .dib", display, inline-block);
+/* Font Family */ @include make-responsive(".webfont, .f1, font-1", font-family, $webfont); @include make-responsive(".webfont2, .f2, font-2", font-family, $webfont2);
+/* Font Style */ @include make-responsive(".i, .italic", font-style, italic); @include make-responsive(".ni, .nitalic, .no-italic", font-style, normal);
+/* Font Weight */ @include make-responsive(".th, .thin", font-weight, 100); @include make-responsive(".el, .extralight, .extra-light", font-weight, 200); @include make-responsive(".li, .light", font-weight, 300); @include make-responsive(".re, .regular", font-weight, 400); @include make-responsive(".me, .medium", font-weight, 500); @include make-responsive(".se, .semibold", font-weight, 600); @include make-responsive(".bo, .b, .bold", font-weight, 700); @include make-responsive(".ex, .eb, .extrabold, extra-bold", font-weight, 800); @include make-responsive(".black", font-weight, 900);
+/* Color */ @include make-responsive(".primary", color, $primary-color); @include make-responsive(".secondary", color, $secondary-color);
