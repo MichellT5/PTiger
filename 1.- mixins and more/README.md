@@ -1,11 +1,15 @@
 # Functions
 ### Responsive px
 this function will allow you to make some properties "responsives" by making them grow to a specified size.
+
 ` @function responsive-px($sm-px, $lg-px, $sm-vw, $lg-vw) {
     @return calc(#{$sm-px}px + (#{$lg-px} - #{$sm-px}) * ((100vw - #{$sm-vw}px) / (#{$lg-vw} - #{$sm-vw})));
 } `
+
 **For example:** the code from below indicates that the font size will be 16px at 768px viewport and 25px at 1920px viewport width
+
 `.text { font-size: responsive-px(16, 25, 768, 1920); }`
+
 # Mixins
 ### phone - (Included in ND styles)
 This mixin allow you to style in xs view. equivalent to ` @media (max-width:767px) {} `
