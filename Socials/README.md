@@ -66,3 +66,8 @@ The code you need is
 It will show like this.
 
 ![Footer](socials-3.png)
+
+### Contributions
+* Source code by Daniel Aguirre
+* Added Youtube by Jorge Reyes
+* Display none on empty SocialPane by Manuel Higuera
