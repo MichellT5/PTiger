@@ -320,16 +320,7 @@ $mobile-nav-bg: 0;
 /* Display */ @include make-responsive(".d-none", display, none); @include make-responsive(".d-flex", display, flex); @include make-responsive(".d-block, .break", display, block); @include make-responsive(".d-inline", display, inline); @include make-responsive(".d-inline-block, .d-iblock, .dib", display, inline-block);
 /* Font Family */ @include make-responsive(".webfont, .f1, font-1", font-family, $webfont); @include make-responsive(".webfont2, .f2, font-2", font-family, $webfont2);
 /* Font Style */ @include make-responsive(".i, .italic", font-style, italic); @include make-responsive(".ni, .nitalic, .no-italic", font-style, normal);
-/* Font Weight */
-@include make-responsive(".th, .thin", font-weight, 100);
-@include make-responsive(".el, .extralight, .extra-light", font-weight, 200);
-@include make-responsive(".li, .light", font-weight, 300);
-@include make-responsive(".re, .regular", font-weight, 400);
-@include make-responsive(".me, .medium", font-weight, 500);
-@include make-responsive(".se, .semibold", font-weight, 600);
-@include make-responsive(".bo, .b, .bold", font-weight, 700);
-@include make-responsive(".ex, .eb, .extrabold, extra-bold", font-weight, 800);
-@include make-responsive(".bl, .black", font-weight, 900);
+/* Font Weight */ @include make-responsive(".th, .thin", font-weight, 100); @include make-responsive(".el, .extralight, .extra-light", font-weight, 200); @include make-responsive(".li, .light", font-weight, 300); @include make-responsive(".re, .regular", font-weight, 400); @include make-responsive(".me, .medium", font-weight, 500); @include make-responsive(".se, .semibold", font-weight, 600); @include make-responsive(".bo, .b, .bold", font-weight, 700); @include make-responsive(".ex, .eb, .extrabold, extra-bold", font-weight, 800); @include make-responsive(".bl, .black", font-weight, 900);
 /* Color */ @include make-responsive(".primary", color, $primary-color); @include make-responsive(".secondary", color, $secondary-color);
 /* Default Navbar DESKTOP */
 $nav-height: responsive-px(50, 78, 768, 1920); /* Height responsive */
