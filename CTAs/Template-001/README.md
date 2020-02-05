@@ -22,13 +22,9 @@ Output Desktop
     </a>
 </div>
 ```
-<<<<<<< HEAD
 
 ### Code SCSS
 
-=======
-### Code SCSS
->>>>>>> 5470a75c63bee58e1144f9a5ef1f7cf2a0265047
 ```scss
 .ctas-container {
     @include tablet-desktop { display: flex; justify-content: space-between; padding: 2.54vw 0 2.02vw; }
