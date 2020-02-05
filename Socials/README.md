@@ -9,10 +9,11 @@ body {
     $fb: false;
     $yelp: false;
     $google: false;
+    $youtube: false;
     $twitter: false;
     $instagram: false;
     $mobile-menu-color: #000;
-    #dnn_SocialPane { #socialfont { a { display: block; width: 45px; height: 45px; line-height: 45px; text-align: center; font-size: 25px; box-sizing: border-box; padding-right: 0; float: right; clear: both; color: #fff; transition: 0.2s linear; text-decoration: none; @include phone { float: unset; /* display: inline-block; */ display: none; } @include tablet-desktop { @include hover { padding-right: 20px; width: 65px; } } &.fa-yelp { background-color: #c41200; } &.fa-google { background-color: #de5246; } &.fa-twitter { background-color: #1da1f2; } &.fa-facebook { background-color: #3B5998; } &.fa-instagram { background-color: #515bd4; } } } } #top-social a { &.fa-yelp { color: #c41200; } &.fa-google { color: #de5246; } &.fa-twitter { color: #1da1f2; } &.fa-facebook { &, &-f { color: #3B5998; } } &.fa-instagram { color: #515bd4; } } #top-social a { &[class*="fa-"] { color: $mobile-menu-color; } } #BottomFooter #socialfont { @include max(527) { float: unset; } } @if not $fb { .fa-facebook { &, &-f { display: none !important; } } } @if not $yelp { .fa-yelp { display: none !important; } } @if not $google { .fa-google { display: none !important; } } @if not $twitter { .fa-twitter { display: none !important; } } @if not $instagram { .fa-instagram { display: none !important; } }
+    #dnn_SocialPane { #socialfont { a { display: block; width: 45px; height: 45px; line-height: 45px; text-align: center; font-size: 25px; box-sizing: border-box; padding-right: 0; float: right; clear: both; color: #fff; transition: 0.2s linear; text-decoration: none; @include phone { float: unset; /* display: inline-block; */ display: none; } @include tablet-desktop { @include hover { padding-right: 20px; width: 65px; } } &.fa-yelp { background-color: #c41200; } &.fa-google { background-color: #de5246; } &.fa-twitter { background-color: #1da1f2; } &.fa-facebook { background-color: #3B5998; } &.fa-instagram { background-color: #515bd4; } &.fa-youtube { background-color: #c4302b; } } } } #top-social a { &.fa-yelp { color: #c41200; } &.fa-google { color: #de5246; } &.fa-twitter { color: #1da1f2; } &.fa-facebook { &, &-f { color: #3B5998; } } &.fa-instagram { color: #515bd4; } } #top-social a { &[class*="fa-"] { color: $mobile-menu-color; } } #BottomFooter #socialfont { @include max(527) { float: unset; } } @if not $fb { .fa-facebook { &, &-f { display: none !important; } } } @if not $yelp { .fa-yelp { display: none !important; } } @if not $google { .fa-google { display: none !important; } } @if not $twitter { .fa-twitter { display: none !important; } } @if not $instagram { .fa-instagram { display: none !important; } } @if not $youtube { .fa-youtube { display: none !important; } }
 }
 ```
 ### Mobile menu
@@ -25,6 +26,7 @@ The code you need is
     <a href="[ND:Google]" target="_blank" class="fa fa-google"></a>
     <a href="[ND:Instagram]" target="_blank" class="fa fa-instagram"></a>
     <a href="[ND:Yelp]" target="_blank" class="fa fa-yelp"></a>
+    <a href="[ND:Youtube]" target="_blank" class="fa fa-youtube"></a>
 </div>
 ```
 It will show like this.
@@ -41,6 +43,7 @@ The code you need is
     <a class="fa fa-google" target="_blank" href="[ND:Google]"></a>
     <a class="fa fa-instagram" target="_blank" href="[ND:Instagram]"></a>
     <a class="fa fa-yelp" target="_blank" href="[ND:Yelp]"></a>
+    <a class="fa fa-youtube" target="_blank" href="[ND:Youtube]"></a>
 </div>
 ```
 It will show like this.
@@ -57,6 +60,7 @@ The code you need is
     <a class="fa fa-google" target="_blank" href="[ND:Google]"></a>
     <a class="fa fa-instagram" target="_blank" href="[ND:Instagram]"></a>
     <a class="fa fa-yelp" target="_blank" href="[ND:Yelp]"></a>
+    <a class="fa fa-youtube" target="_blank" href="[ND:Youtube]"></a>
 </div>
 ```
 It will show like this.
