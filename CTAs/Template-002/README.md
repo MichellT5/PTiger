@@ -1,4 +1,4 @@
-# Template 002
+# Template 002 by Jorge Reyes
 Output Mobile
 
 ![Template 002 Mobile](t002-mobile.png)

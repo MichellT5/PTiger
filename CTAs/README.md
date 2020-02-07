@@ -10,7 +10,7 @@ Output Desktop
 
 ![Template 001 Desktop](Template-001/t001-desktop.png)
 
-### [Template 002](Template-002)
+### [Template 002](Template-002) by Jorge Reyes
 
 Output Mobile
 
