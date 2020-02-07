@@ -9,3 +9,15 @@ Output Mobile
 Output Desktop
 
 ![Template 001 Desktop](Template-001/t001-desktop.png)
+
+### [Template 002](Template-002)
+
+Output Mobile
+
+![Template 002 Mobile](Template-002/t002-mobile.png)
+
+Output Desktop
+
+![Template 002 Desktop](Template-002/t002-desktop.png)
+
+* Code by Jorge Reyes.
