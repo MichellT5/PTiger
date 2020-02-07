@@ -16,6 +16,22 @@ this function will allow you to make some properties "responsives" by making the
 }
 ```
 
+### get-vw - by Jorge Reyes and Topitzin Márquez
+This function generates automatically the vw unit by only put the px from the xd
+
+```scss
+/* $prop = the property to adjust */
+
+/* Mobile */
+@function get-vw-mb($px) {
+    $vw-result: $px / 12.42; @return #{$vw-result}vw;
+}
+/* Desktop */
+@function get-vw-desktop($px) {
+    $vw-result: $px / 19.2; @return #{$vw-result}vw;
+}
+```
+
 # Mixins
 ### phone - (Included in ND styles)
 This mixin allow you to style in xs view. equivalent to ` @media (max-width:767px) {} `

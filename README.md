@@ -291,6 +291,8 @@ $mobile-nav-bg: 0;
 // Custom code
 @function responsive-px($sm-px, $lg-px, $sm-vw, $lg-vw) { @return calc(#{$sm-px}px + (#{$lg-px} - #{$sm-px}) * ((100vw - #{$sm-vw}px) / (#{$lg-vw} - #{$sm-vw}))); }
 @function responsive-px-extra($sm-px, $lg-px, $sm-vw, $lg-vw, $extra: 0px) { @return calc(#{$sm-px}px + (#{$lg-px} - #{$sm-px}) * ((100vw - #{$sm-vw}px) / (#{$lg-vw} - #{$sm-vw})) + #{$extra}); }
+@function get-vw-mb($px) { $vw-result: $px / 12.42; @return #{$vw-result}vw; }
+@function get-vw-desktop($px) { $vw-result: $px / 19.2; @return #{$vw-result}vw; }
 @mixin hoverall { &:hover, &:focus, &:active { @content; } };
 @mixin hover { @include tablet-desktop { @include hoverall { @content; }; }; };
 @mixin min($min) { @media(min-width:#{$min}px) { @content; } };
