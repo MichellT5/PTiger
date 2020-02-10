@@ -81,6 +81,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     <a href="/Shop-For-Tires/brands/Dick Cepek" title="Dick Cepek Tires®">
         <img alt="Dick Cepek Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_dick_cepek.png" />
     </a>
+    <a href="/Shop-For-Tires/brands/Double Coin" title="Double Coin Tires®">
+        <img alt="Double Coin Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_doublecoin.png" />
+    </a>
     <a href="/Shop-For-Tires/brands/Dunlop" title="Dunlop Tires®">
         <img alt="Dunlop Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Dunlop.png">
     </a>
@@ -107,6 +110,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     </a>
     <a href="/Shop-For-Tires/brands/Greenball" title="Greenball Tires®">
         <img alt="Greenball Tires" src="https://a.nd-cdn.us/tire_brands/logos/logo_Greenball.gif" />
+    </a>
+    <a href="/Shop-For-Tires/brands/GT Radial" title="GT Radial Tires®">
+        <img alt="GT Radial Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_GTRadial.png" />
     </a>
     <a href="/Shop-For-Tires/brands/Hankook" title="Hankook Tires®">
         <img alt="Hankook Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Hankook.png">
@@ -161,6 +167,12 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     </a>
     <a href="/Shop-For-Tires/brands/Primewell" title="Primewell Tires®">
         <img alt="Primewell Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Primewell.png">
+    </a>
+    <!-- <a href="/Shop-For-Tires/brands/Primex Ag" title="Primex Ag Tires®"> -->
+        <!-- <img alt="Primex Ag Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Prime_ag.png"> -->
+    <!-- </a> -->
+    <a href="/Shop-For-Tires/brands/Pro Comp" title="Pro Comp Tires®">
+        <img alt="Pro Comp Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Procomp.png">
     </a>
     <a href="/Shop-For-Tires/brands/Riken" title="Riken Tires®">
         <img alt="Riken Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Riken.png">
