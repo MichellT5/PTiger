@@ -5,9 +5,9 @@ The first two lines define the background color and a font-color to make them lo
 ```scss
 // ===[FOOTER]=== //
 #bgbottom {
-    $text-color: #fff;
     background: #000;
-    font-family: $webfont;  border-top: 0vw solid $primary-color;
+    $text-color: #fff;
+    font-family: $webfont; border-top: 0vw solid $primary-color;
     @include tablet-desktop { border-width: 0vw; }
     #dnn_dnnLogoFooter_hypLogo {
         position: relative; z-index: 1; display: block; margin: 9vw auto; width: 100%; padding: 0;
@@ -19,6 +19,7 @@ The first two lines define the background color and a font-color to make them lo
         #BottomFooter {
             padding-top: 0; color: $text-color;
             #poweredbynd, #poweredbynd * { box-sizing: initial; text-align: left; a { color: #fff; position: absolute; } }
+            #socialfont { @include max(527) { float: unset; } }
             @include tablet-desktop {
                 display: flex; justify-content: space-between;
                 >* { width: 30%; margin: 0; padding: 0; }
@@ -54,7 +55,7 @@ The first two lines define the background color and a font-color to make them lo
                 @include phone { margin: 0 auto; }
             }
         }
-        #FooterPane2Container, #FooterPane3Container { font-size: 1.5em; margin: 0;  @include max(527) { text-align: center; } }
+        #FooterPane2Container, #FooterPane3Container { font-size: 1.5em; margin: 3vw 0 0;  @include max(527) { text-align: center; } }
         #FooterPane2Container { @include tablet-desktop { padding: 0 5vw; } }
         #FooterPane4Container { min-height: auto; }
     }
