@@ -45,6 +45,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
         <img alt="Fuzion® Tires" src="Skins/master/img/Fuzion.png" />
     </a>
     <div class="space"></div>
+    <a href="/Shop-For-Tires/brands/Bandag" title="Bandag Tires®">
+        <img alt="Bandag Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Bandag.png">
+    </a>
     <a href="/Shop-For-Tires/brands/BFGoodrich" title="BFGoodrich Tires®">
         <img alt="BFGoodrich Tires®" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_BFGoodrich.png" />
     </a>
@@ -177,6 +180,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     <a href="/Shop-For-Tires/brands/Riken" title="Riken Tires®">
         <img alt="Riken Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Riken.png">
     </a>
+    <!-- <a href="/Shop-For-Tires/brands/Roadlux" title="Roadlux Tires®"> -->
+        <!-- <img alt="Roadlux Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/Roadlux.png"> -->
+    <!-- </a> -->
     <a href="/Shop-For-Tires/brands/Sailun" title="Sailun Tires®">
         <img alt="Sailun Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Sailun.png">
     </a>
