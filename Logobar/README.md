@@ -99,6 +99,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     <a href="/Shop-For-Tires/brands/Firestone" title="Firestone Tires®">
         <img alt="Firestone Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Firestone.png" />
     </a>
+    <a href="/Shop-For-Tires/brands/Fuzion" title="Fuzion Tires®">
+        <img alt="Fuzion Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Fuzion.png" />
+    </a>
     <a href="/Shop-For-Tires/brands/Galaxy Ag" title="Galaxy Ag Tires®">
         <img alt="Galaxy Ag Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Galaxy.png">
     </a>
