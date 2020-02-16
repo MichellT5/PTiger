@@ -81,6 +81,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     <a href="/Shop-For-Tires/brands/Delta" title="Delta Tires®">
         <img alt="Delta Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Delta.png" />
     </a>
+    <!-- <a href="/Shop-For-Tires/brands/Diamondback" title="Diamondback Tires®"> -->
+        <!-- <img alt="Diamondback Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/Diamondback.png" /> -->
+    <!-- </a> -->
     <a href="/Shop-For-Tires/brands/Dick Cepek" title="Dick Cepek Tires®">
         <img alt="Dick Cepek Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_dick_cepek.png" />
     </a>
@@ -209,6 +212,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     </a>
     <a href="/Shop-For-Tires/brands/Toyo" title="Toyo Tires®">
         <img alt="Toyo Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Toyo.png">
+    </a>
+    <a href="/Shop-For-Tires/brands/Triangle" title="Triangle Tires®">
+        <img alt="Triangle Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Triangle.png">
     </a>
     <a href="/Shop-For-Tires/brands/Uniroyal" title="Uniroyal Tires®">
         <img alt="Uniroyal Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Uniroyal.png">
