@@ -10,8 +10,8 @@ The first two lines define the background color and a font-color to make them lo
     font-family: $webfont; border-top: 0vw solid $primary-color;
     @include tablet-desktop { border-width: 0vw; }
     #dnn_dnnLogoFooter_hypLogo {
-        position: relative; z-index: 1; display: block; margin: 9vw auto; width: 100%; padding: 0;
-        @include tablet-desktop { margin: 0 0 1vw; width: 100%; padding: 0; }
+        position: relative; z-index: 1; display: block; margin: 9vw auto; width: 20vw; min-width: 200px; padding: 0;
+        @include tablet-desktop { margin: 0 0 1vw; width: 8.52vw; min-width: 150px; padding: 0; }
         #dnn_dnnLogoFooter_imgLogo { display: block; width: 100%; }
     }
     #netdriven {
@@ -21,8 +21,8 @@ The first two lines define the background color and a font-color to make them lo
             #poweredbynd, #poweredbynd * { box-sizing: initial; text-align: left; a { color: #fff; position: absolute; } }
             #socialfont { @include max(527) { float: unset; } }
             @include tablet-desktop {
-                display: flex; justify-content: space-between;
-                >* { width: 30%; margin: 0; padding: 0; }
+                display: flex; justify-content: flex-end;
+                >* { max-width: 30%; margin: 0; padding: 0; }
             }
             h2, a:not(.dnnPrimaryAction), .captcha { color: $text-color; }
             a:not(.dnnPrimaryAction) {
@@ -55,8 +55,10 @@ The first two lines define the background color and a font-color to make them lo
                 @include phone { margin: 0 auto; }
             }
         }
-        #FooterPane2Container, #FooterPane3Container { font-size: 1.5em; margin: 3vw 0 0;  @include max(527) { text-align: center; } }
-        #FooterPane2Container { @include tablet-desktop { padding: 0 5vw; } }
+        #FooterPane1Container { @include tablet-desktop { width: 30%; margin-right: auto; } }
+        #FooterPane2Container, #FooterPane3Container {
+            font-size: 1.5em; margin: 3vw 0 0; @include tablet-desktop { padding: 0 0 0 30px; } @include max(527) { text-align: center; }
+        }
         #FooterPane4Container { min-height: auto; }
     }
 }
