@@ -57,7 +57,8 @@ The first two lines define the background color and a font-color to make them lo
         }
         #FooterPane1Container { @include tablet-desktop { width: 30%; margin-right: auto; } }
         #FooterPane2Container, #FooterPane3Container {
-            font-size: 1.5em; margin: 3vw 0 0; @include tablet-desktop { padding: 0 0 0 30px; } @include max(527) { text-align: center; }
+            font-size: 1.5em; margin: 3vw 0 0; @include tablet-desktop { min-width: 25%; padding: 0 0 0 30px; }
+            @include max(527) { text-align: center; }
         }
         #FooterPane4Container { min-height: auto; }
     }
