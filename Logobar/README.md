@@ -219,6 +219,9 @@ Note that first 6 logos have different `src` attribute and you'll have to upload
     <a href="/Shop-For-Tires/brands/Uniroyal" title="Uniroyal Tires®">
         <img alt="Uniroyal Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Uniroyal.png">
     </a>
+    <a href="/Shop-For-Tires/brands/Vogue" title="Vogue Tires®">
+        <img alt="Vogue Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_Vogue.png">
+    </a>
     <a href="/Shop-For-Tires/brands/Yokohama" title="Yokohama®">
         <img alt="Yokohama® Tires" src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_yokohama.png">
     </a>
