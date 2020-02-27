@@ -303,12 +303,12 @@ $mobile-nav-bg: 0;
 @mixin transition($args...) { $type: nth($args, length($args)); $props: remove-nth($args, length($args)); $result: (); @for $i from 1 through length($props) { $prop: nth($props, $i); $result: append($result, $prop); $result: append($result, $type); @if $i !=length($props) { $result: append($result, unquote($string: ",")); } } transition: $result; }
 %btn {
     @include transition(background-color, color, border-color, 0.3s ease-in-out); display: block; border: 0 solid $primary-color;
-    border-radius: 4px; background-color: #fff; min-width: 180px; min-height: 25px; text-decoration: none; font-family: $webfont;
-    color: #000; @include tablet-desktop { border-radius: 12px; }
+    border-radius: .56vw; background-color: $primary-color; min-width: 180px; min-height: 25px; text-decoration: none; font-family: $webfont;
+    color: #fff; @include tablet-desktop { border-radius: .36vw; }
 }
 %btn-icon { position: relative; padding-right: 11.54vw; i { position: absolute; right: 3.92vw; } }
 %btn-flex { display: flex; align-items: center; }
-@mixin btn-hover { background-color: $primary-color; color: #fff; border-color: $primary-color; }
+@mixin btn-hover { background-color: $secondary-color; color: #fff; border-color: $primary-color; }
 %btn-primary-hover { @include btn-hover; }
 .homepage .container, #main-content .container, .container, #sub-content { padding: 0 5vw; width: 100%; margin: 0 auto; max-width: 1530px; font-family: $webfont; @include tablet-desktop { padding: 0 15px; width: 90%; >div:not(#dnn_HeaderContactPane) { width: 100%; } } &, * { box-sizing: border-box; .coupon-wrap { &, & * { box-sizing: initial; } } } }
 .text { display: block; &:nth-of-type(n+2) { margin-top: 1em; } }
@@ -337,6 +337,7 @@ $nav-max-width: 100%; /* 100% to full width */
     #contentnav .topLevel>li.item {
         @include tablet-desktop { border-right: responsive-px(1, 3, 768, 1920) solid #fff; &:last-child { border-right: 0; } }
         a { font-weight: 400; }
+        >a { text-transform: capitalize; }
         .subLevel>ul {
             background-color: #000;
             a {
