@@ -355,7 +355,7 @@ $nav-max-width: 100%; /* 100% to full width */
 #Body {
     .fa-phone { transform: rotateY(180deg); }
     @include phone {
-        .mobileButtons { .mobileBG { background-color: #000; opacity: 1; } }
+        .mobileButtons { .mobileBG { background-color: $primary-color; opacity: 1; } .nd-mobile-button span { color: #fff; } }
         #contentnav { height: unset; }
     }
 }
