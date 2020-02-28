@@ -303,8 +303,8 @@ $mobile-nav-bg: 0;
 @mixin transition($args...) { $type: nth($args, length($args)); $props: remove-nth($args, length($args)); $result: (); @for $i from 1 through length($props) { $prop: nth($props, $i); $result: append($result, $prop); $result: append($result, $type); @if $i !=length($props) { $result: append($result, unquote($string: ",")); } } transition: $result; }
 %btn {
     @include transition(background-color, color, border-color, 0.3s ease-in-out); display: block; border: 0 solid $primary-color;
-    border-radius: .56vw; background-color: $primary-color; min-width: 180px; min-height: 25px; text-decoration: none; font-family: $webfont;
-    color: #fff; @include tablet-desktop { border-radius: .36vw; }
+    border-radius: .56vw; background-color: $primary-color; min-width: max-content; min-height: max-content; padding: 5px;
+    text-decoration: none; font-family: $webfont; color: #fff; @include tablet-desktop { border-radius: .36vw; }
 }
 %btn-icon { position: relative; padding-right: 11.54vw; i { position: absolute; right: 3.92vw; } }
 %btn-flex { display: flex; align-items: center; }
