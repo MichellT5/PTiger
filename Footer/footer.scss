@@ -1,4 +1,4 @@
-// ===[FOOTER]=== //
+/* FOOTER */
 #bgbottom {
     background: #000;
     $text-color: #fff;
@@ -13,7 +13,8 @@
         width: 90%; max-width: 1500px; margin: 0 auto; padding: 2vw 1vw 1vw; overflow: visible;
         #BottomFooter {
             padding-top: 0; color: $text-color;
-            #poweredbynd, #poweredbynd * { box-sizing: initial; text-align: left; a { color: #fff; position: absolute; } }
+            // #poweredbynd, #poweredbynd * { box-sizing: initial; text-align: left; a { color: #fff; position: absolute; } }
+            .poweredByBadge, .poweredByBadge * { box-sizing: initial; text-align: left; a { color: #fff; position: absolute; } }
             #socialfont { @include max(527) { float: unset; } }
             @include tablet-desktop {
                 display: flex; justify-content: flex-end;
