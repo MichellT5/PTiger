@@ -1,0 +1,21 @@
+/* FOOTER */
+body {
+    #bgbottom { background: $primary-color; padding: 2rem 0; }
+    #dnn_FooterContentPane { .DNNModuleContent { position: relative; bottom: 30px; @include phone { bottom: 0; } } }
+    #FooterPane1Container, #FooterPane2Container, #FooterPane3Container, #FooterPane4Container { min-height: 254px; }
+    #BottomFooter h2 { font-weight: 900; font-size:1rem; color: $secondary-color; }
+    #BottomFooter ul li { display: block; a { @include hoverall { text-decoration: underline; } } }
+    #BottomFooter #socialfont { margin-top: .5rem; a { color: $secondary-color; } }
+    .poweredByBadge { margin: 1rem 0 0 0 !important; }
+    @include phone {
+        .homepage #nd-middlebar.first-row { padding: 4rem 0; }
+        #sub-content { display: none; }
+        #FooterPane1Container, #FooterPane2Container, #FooterPane3Container, #FooterPane4Container { min-height: auto; }
+        #BottomFooter { flex-direction: column; text-align: center; }
+        #BottomFooter #socialfont { float: none; }
+        .poweredByBadge { margin: 1rem auto 0 !important; }
+    }
+    .locwidgetlisting>div { float: none; }
+    // #LocationWidget { display: flex; align-items: center; justify-content: center; }
+    @include phone { #FooterPane2Container, #FooterPane4Container { width: 100%; } }
+}
