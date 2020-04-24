@@ -296,7 +296,7 @@ $mobile-nav-bg: 0;
     text-decoration: none; font-family: $webfont; color: #fff; @include tablet-desktop { border-radius: .36vw; }
 }
 %btn-icon { position: relative; padding-right: 11.54vw; i { position: absolute; right: 3.92vw; } }
-%btn-flex { display: flex; align-items: center; }
+%btn-flex { display: inline-flex; align-items: center; }
 @mixin btn-hover { background-color: $secondary-color; color: #fff; border-color: $primary-color; }
 %btn-primary-hover { @include btn-hover; }
 .homepage .container, #main-content .container, .container, #sub-content { padding: 0 5vw; width: 100%; margin: 0 auto; max-width: 1530px; font-family: $webfont; @include tablet-desktop { padding: 0 15px; width: 90%; >div:not(#dnn_HeaderContactPane) { width: 100%; } } &, * { box-sizing: border-box; .coupon-wrap { &, & * { box-sizing: initial; } } } }
