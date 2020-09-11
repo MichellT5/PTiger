@@ -3,15 +3,17 @@ body {
     #bgbottom { background: $primary-color; padding: 2rem 0; #netdriven { width: 100%; box-sizing: border-box; padding: 0 10vw; @include tablet-desktop { max-width: 1170px; } } #BottomFooter { padding: 0; font-size: 1em; } }
     #dnn_FooterContentPane { .DNNModuleContent { position: relative; bottom: 30px; @include phone { bottom: 0; } } }
     #FooterPane1Container, #FooterPane2Container, #FooterPane3Container, #FooterPane4Container { min-height: 254px; @include tablet-desktop { max-width: 25%; } }
-    #BottomFooter h2 { font-weight: 900; font-size:1rem; color: $secondary-color; }
+    #BottomFooter h2 { font: 700 1rem $webfont; color: $secondary-color; }
     #BottomFooter ul li { display: block; a { @include hoverall { text-decoration: underline; } } }
     #BottomFooter #socialfont { margin-top: .5rem; a { color: $secondary-color; } }
-    .poweredByBadge { margin: 1rem 0 0 0 !important; }
+    .poweredByBadge { margin: 1rem 0 0 0 !important; background: none; }
     @include phone {
+        #bgbottom #netdriven { padding: 0; }
+        #hometext { padding: 5vw 5vw 0; }
         .homepage #nd-middlebar.first-row { padding: 4rem 0; }
         #sub-content { display: none; }
         #FooterPane1Container, #FooterPane2Container, #FooterPane3Container, #FooterPane4Container { min-height: auto; }
-        #BottomFooter { flex-direction: column; text-align: center; }
+        #BottomFooter { flex-direction: column; text-align: center; >div { border-bottom: 1px solid #d4d2d2; } }
         #BottomFooter #socialfont { float: none; }
         .poweredByBadge { margin: 1rem auto 0 !important; }
     }
