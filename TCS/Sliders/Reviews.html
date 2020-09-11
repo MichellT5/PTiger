@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="/Portals/PortalID/Skins/master/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="/Portals/PortalID/Skins/master/slick/slick-theme.css" />
+<script type="text/javascript" src="/Portals/PortalID/Skins/master/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.reviews-slider').slick({
+            speed: 800, autoplay: true, slidesToShow: 1, slidesToScroll: 1, infinite: true, draggable: true, arrows: true, pauseOnHover: true, pauseOnFocus: true,
+            adaptiveHeight: false, prevArrow: '<button class="fas fa-chevron-left slick-prev" type="button"></button>',
+            nextArrow: '<button class="fas fa-chevron-right slick-next" type="button"></button>'
+        });
+    });
+</script>
+<div class="main-reviews">
+    <div class="reviews-slider">
+        <div class="reviews-wrapper">
+            <div class="reviews-text">
+                teeeeeeeeeeeeeeeeeeeeeext
+            </div>
+            <div class="reviews-name">
+                naaaaaaaaaaaaaaaaaaaaaame
+            </div>
+            <div class="reviews-rating">
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-button">
+        <a class="btn btn-hover" href="/About/Reviews" title="More Reviews">More Reviews</a>
+    </div>
+</div>
