@@ -1,0 +1,49 @@
+/* INTERNAL PAGES */
+.subpage {
+    .tcsbtn-1 { @extend %btn; padding: .4em; &:hover, &:active, &:focus { @include btn-hover; } }
+    // #contentheader { border-bottom: 1px solid #ccc; }
+    #WheelConfigurator { padding: 1rem 0; }
+    #dnn_SidePane, #dnn_CTCFilterPane { z-index: 6; }
+    .wc-img-bot { display: none; }
+    #maincc {
+        .center { text-align: center; }
+        .btn, .btn-hover { padding: .4em; }
+        .subcontainer {
+            padding: 1em 0; @include phone { text-align: center; }
+            &, * { box-sizing: border-box; }
+            .flex-title { display: flex; align-items: center; img { max-width: 100px; max-height: 100px; } h3 { margin: 0 0 0 1em; } }
+            ol, ul, .list { margin-left: 1em; li { list-style-position: inside; margin: 0; } ol, ul { margin-left: 2em; } }
+            .big, .big-1 { font-size: 1.25em; } .big-2 { font-size: 1.5em; } .big-3 { font-size: 1.75em; } .big-4 { font-size: 2em; }
+            .mb-0 { margin-bottom: 0; } .mb-1 { margin-bottom: 0.25em; } .mb-2 { margin-bottom: 0.5em; } .mb-3 { margin-bottom: 0.75em; } .mb-4 { margin-bottom: 1em; }
+            .mb-1x { margin-bottom: 1em; } .mb-2x { margin-bottom: 2em; } .mb-3x { margin-bottom: 3em; } .mb-4x { margin-bottom: 4em; }
+            .p-0 { padding: 0; } .p-1 { padding: 0.25em; } .p-2 { padding: 0.5em; } .p-3 { padding: 0.75em; } .p-4 { padding: 1em; }
+            .red { color: #f00; }
+            .bold { font-weight: 700; }
+            .italic { font-style: italic; }
+            .primary { color: $primary-color; }
+            div, ul, p, h1, h2, h3 { margin-bottom: 1em; &:last-child { margin-bottom: 0; } }
+            .small, sup { font-size: .675em; }
+        }
+        .clearfix {
+            @include tablet-desktop {
+                .fl { float: left; margin: 0 1em .25em 0; }
+                .fr { float: right; margin: 0 0 .25em 1em; }
+            }
+        }
+        .ourpeople {
+            .people {
+                background: #efefef; padding: 1em;
+                img { margin-right: 1em; @include tablet-desktop { float: left; margin-bottom: .25em; } }
+                h2 { color: darken($primary-color, 20%); }
+                h2, h3 { margin: 0 0 .3em; }
+            }
+        }
+        .tires, .wheels { display: flex; flex-flow: wrap; align-items: flex-start; justify-content: center; }
+        .tire, .wheel {
+            box-shadow: 0 0 5px #888; display: flex; flex-flow: column; align-items: center; justify-content: center; margin: 0 5px 1em; border-radius: .4em;
+            width: 235px; background: #eee; padding: 5px 0; text-decoration: none; text-align: center;
+            img { object-fit: contain; display: inline-block; margin: 0 0 1em; width: 150px; height: 75px; }
+        }
+        .tire, a.wheel { transition: color .3s; &:hover, &:active, &:focus { span { text-decoration: underline; } } }
+    }
+}
